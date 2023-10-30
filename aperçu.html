@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Aperçu de Convention</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+  <link rel="stylesheet" href="https://www.w3schools.com/lib/w3-theme-black.css">
+  <link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Open+Sans'>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <style>
+    html,
+    body,
+    h1,
+    h2,
+    h3,
+    h4,
+    h5 {
+      font-family: "Open Sans", sans-serif
+    }
+
+    /* Style pour l'iframe */
+    .iframe-container {
+      position: relative;
+      overflow: hidden;
+      padding-top: 56.25%;
+      /* Ratio 16:9 (modifier en fonction de votre contenu) */
+      margin: 0 auto;
+      /* Centrer horizontalement */
+      max-width: 800px;
+      /* Limiter la largeur pour la mise en page */
+    }
+
+    .iframe-container iframe {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+    }
+  </style>
+</head>
+
+<body class="w3-theme-l5">
+
+  <!-- Navbar -->
+  <div class="w3-top">
+    <div class="w3-bar w3-theme-d2 w3-left-align w3-large">
+      <a href="Accueil.html" class="w3-bar-item w3-button w3-padding-large w3-theme-d4"><i
+          class="fa fa-home w3-margin-right"></i>Home</a>
+      <!-- Bouton de redirection vers la page de modification -->
+      <a href="modification.html" <button type="button" class="w3-button w3-blue" r</button>Modifier</a>
+
+      <!-- Bouton PDF -->
+      <a href="Images/CONVENTION_OFF.pdf" target="_blank" <button type="button" class="w3-button w3-red"><i
+          class="fa fa-thumbs-up"></i>
+        </button>PDF</a>
+    </div>
+  </div>
+
+  <!-- Page Container -->
+  <div class="w3-container w3-content" style="max-width: 1400px; margin-top: 80px;">
+    <!-- Titre de l'aperçu -->
+    <h1 class="w3-center">Aperçu de votre convention</h1>
+    <div class="w3-row">
+      <div class="w3-col m12">
+        <!-- Cadre de l'iframe avec barre de défilement -->
+        <div class="iframe-container">
+          <iframe src="image.html" frameborder="0" scrolling="auto"></iframe>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <footer class="w3-container w3-theme-d3 w3-padding-16">
+  </footer>
+
+  <footer class="w3-container w3-theme-d5">
+    <p>A PROPOS DE NOUS</p>
+  </footer>
+
+</body>
+
+</html>

@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Modification de Convention</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+  <link rel="stylesheet" href="https://www.w3schools.com/lib/w3-theme-black.css">
+  <link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Open+Sans'>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <style>
+    html,
+    body,
+    h1,
+    h2,
+    h3,
+    h4,
+    h5 {
+      font-family: "Open Sans", sans-serif;
+    }
+
+    /* Style pour l'iframe */
+    .iframe-container {
+      position: relative;
+      overflow: hidden;
+      padding-top: 56.25%;
+      /* Ratio 16:9 (modifier en fonction de votre contenu) */
+      margin: 0 auto;
+      /* Centrer horizontalement */
+      max-width: 800px;
+      /* Limiter la largeur pour la mise en page */
+    }
+
+    .iframe-container iframe {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+    }
+  </style>
+</head>
+
+<body class="w3-theme-l5">
+
+  <!-- Navbar -->
+  <div class="w3-top">
+    <div class="w3-bar w3-theme-d2 w3-left-align w3-large">
+      <a href="Accueil.html" class="w3-bar-item w3-button w3-padding-large w3-theme-d4"><i
+          class="fa fa-home w3-margin-right"></i>Home</a>
+      <!-- Bouton de redirection vers la page d'aperçu -->
+      <a href="aperçu.html" class="w3-bar-item w3-button w3-padding-large" title="Aperçu"><i class="fa fa-eye"></i>
+        Aperçu</a>
+    </div>
+  </div>
+
+  <!-- Page Container -->
+  <div class="w3-container w3-content" style="max-width:1400px;margin-top:80px">
+    <!-- The Grid -->
+    <div class="w3-row">
+      <!-- Left Column (Visualisation de la Convention) -->
+      <div class="w3-col m8">
+        <div class="w3-container w3-card w3-white w3-round w3-margin">
+          <h4>Votre Convention</h4><br>
+          <!-- Utilisation de l'élément iframe pour afficher le PDF -->
+          <div class="iframe-container">
+            <iframe src="image.html" frameborder="0" scrolling="auto"></iframe>
+          </div>
+          <!-- Fin de l'affichage de la convention -->
+        </div>
+      </div>
+
+      <!-- Right Column (Formulaire de Modification) -->
+      <div class="w3-col m4">
+        <div class="w3-container w3-card w3-white w3-round w3-margin">
+          <h4>Formulaire de Modification</h4><br>
+          <form action="process_modification.php" method="post">
+            <div class="w3-row-padding">
+              <label for="nom">Nom :</label>
+              <input type="text" id="nom" name="nom" placeholder="Entrez votre nom"><br><br>
+            </div>
+            <div class="w3-row-padding">
+              <label for="prenom">Prénom :</label>
+              <input type="text" id="prenom" name="prenom" placeholder="Entrez votre prénom"><br><br>
+            </div>
+            <div class="w3-row-padding">
+              <label for="date_naissance">Date de naissance :</label>
+              <input type="date" id="date_naissance" name="date_naissance"><br><br>
+            </div>
+            <div class="w3-row-padding">
+              <label for="adresse">Adresse :</label>
+              <input type="text" id="adresse" name="adresse" placeholder="Entrez votre adresse"><br><br>
+            </div>
+            <div class="w3-row-padding">
+              <label for="courriel">Courriel :</label>
+              <input type="email" id="courriel" name="courriel" placeholder="Entrez votre courriel"><br><br>
+            </div>
+            <div class="w3-row-padding">
+              <label for="tel">n° de téléphone :</label>
+              <input type="text" id="tel" name="tel" placeholder="Entrez votre n° de téléphone"><br><br>
+            </div>
+            <div class="w3-row-padding">
+              <label for="duree_stage">Durée du stage :</label>
+              <select id="duree_stage" name="duree_stage">
+                <option value="2 mois">2 mois</option>
+                <option value="3 mois">3 mois</option>
+                <option value="4 mois">4 mois</option>
+                <option value="6 mois">6 mois</option>
+              </select>
+            </div>
+            <div class="w3-row-padding">
+              <label for="service_stage">Service du Stage :</label>
+              <select id="service_stage" name="service_stage">
+                <option value="Service cybersécurité">Service cybersécurité</option>
+                <option value="Service développement">Service développement</option>
+                <option value="Service réseaux">Service réseaux</option>
+                <option value="R&D">R&D</option>
+              </select>
+            </div>
+            <br>
+            <a href="aperçu.html" class="w3-button w3-green">
+              <i class="fa fa-save"></i> Sauvegarder
+            </a>
+
+            </button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+  <br>
+
+
+
+</body>
+
+</html>
